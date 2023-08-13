@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Projects To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .task-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .task {
+      flex: 1;
+      min-width: 300px;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 20px;
+    }
+
+    .task h2 {
+      margin-top: 0;
+    }
+
+    .task label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .task .deadline {
+      font-size: 14px;
+      color: #999;
+    }
+
+    .high-priority {
+      color: red;
+      font-weight: bold;
+    }
+
+    .medium-priority {
+      color: orange;
+    }
+
+    .low-priority {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Website Projects To-Do List</h1>
+  <div class="task-list">
+    <div class="task">
+      <h2>Frontend Development</h2>
+      <label>
+        <input type="checkbox">
+        Create landing page
+      </label>
+      <span class="deadline">Deadline: 2023-08-15</span>
+      <span class="high-priority">High Priority</span>
+    </div>
+
+    <div class="task">
+      <h2>Backend Development</h2>
+      <label>
+        <input type="checkbox">
+        Set up server and database
+      </label>
+      <span class="deadline">Deadline: 2023-08-20</span>
+      <span class="medium-priority">Medium Priority</span>
+    </div>
+
+    <div class="task">
+      <h2>Design</h2>
+      <label>
+        <input type="checkbox">
+        Create UI mockups
+      </label>
+      <span class="deadline">Deadline: 2023-08-25</span>
+      <span class="low-priority">Low Priority</span>
+    </div>
+
+    <!-- Add more tasks here -->
+
+  </div>
+</body>
+</html>
